@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+namespace greetings {
+    void sayHello() {
+        cout << "Good morning! " << endl;
+    }
+
+    void sayGoodbye() {
+        cout << "Good evening! " << endl;
+    }
+}
+int main() {
+    int a;
+    cout << "If it is currently morning press 1 if not press 2.";
+    cin >> a;
+    if (a==1){
+        greetings::sayHello();
+    }
+    if (a==2){
+        greetings::sayGoodbye();
+
+    }
+
+    return 0;
+}

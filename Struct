@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+struct citizen {
+    string name;
+    int age;
+    char sex;
+};
+
+int main() {
+    citizen p1;
+    string name;
+    int age;
+    char sex;
+
+    cout << "What is your name: ";
+    cin>>name;
+    cout << "what is your age: ";
+    cin>>age;
+    cout << "what is your sex M for male F for female: ";
+    cin >>sex;
+
+    p1.name = name;
+    p1.age = age;
+    p1.sex = sex;
+
+    cout << "Name: " << p1.name << endl;
+    cout << "Age: " << p1.age << endl;
+    cout << "Sex: " << p1.sex << endl;
+
+    return 0;
+}

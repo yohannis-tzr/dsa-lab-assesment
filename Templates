@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+template <class C>
+C getMax(C a, C b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    int a ;
+    int b ;
+    double c ;
+    double d ;
+    cout << "Enter any integer number"<<endl;
+    cin >>a;
+    cout << "Enter any integer number"<<endl;
+    cin >>b;
+    cout << "Enter any decimal number"<<endl;
+    cin >>c;
+    cout << "Enter any decimal number"<<endl;
+    cin >>d;
+    cout << "Max of input a and b is " << getMax(a, b) << endl;
+    cout << "Max of double input a and b is  " << getMax(c, d) << endl;
+
+    return 0;
+}
